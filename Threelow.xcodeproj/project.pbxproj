@@ -10,6 +10,7 @@
 		06851BDF21126B800018D2E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06851BDE21126B800018D2E4 /* main.m */; };
 		06851BE721126C640018D2E4 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 06851BE621126C640018D2E4 /* Dice.m */; };
 		06851BEA21126D000018D2E4 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06851BE921126D000018D2E4 /* InputHandler.m */; };
+		06851BED211278B70018D2E4 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06851BEC211278B70018D2E4 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		06851BE621126C640018D2E4 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		06851BE821126D000018D2E4 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		06851BE921126D000018D2E4 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		06851BEB211278B70018D2E4 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		06851BEC211278B70018D2E4 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				06851BDE21126B800018D2E4 /* main.m */,
+				06851BEB211278B70018D2E4 /* GameController.h */,
+				06851BEC211278B70018D2E4 /* GameController.m */,
 				06851BE521126C640018D2E4 /* Dice.h */,
 				06851BE621126C640018D2E4 /* Dice.m */,
 				06851BE821126D000018D2E4 /* InputHandler.h */,
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06851BE721126C640018D2E4 /* Dice.m in Sources */,
+				06851BED211278B70018D2E4 /* GameController.m in Sources */,
 				06851BEA21126D000018D2E4 /* InputHandler.m in Sources */,
 				06851BDF21126B800018D2E4 /* main.m in Sources */,
 			);
