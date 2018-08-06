@@ -45,4 +45,25 @@
     [self.heldDiceDictionary removeAllObjects];
 }
 
+- (void)score {
+    NSInteger totalScore = 0;
+    for (NSString *str in [self.heldDiceDictionary allValues]) {
+        if ([str isEqualToString:@"⚀"]) {
+            totalScore += 1;
+        } else if ([str isEqualToString:@"⚁"]) {
+            totalScore += 2;
+        } else if ([str isEqualToString:@"⚂"]) {
+            totalScore += 0;
+        } else if ([str isEqualToString:@"⚃"]) {
+            totalScore += 4;
+        } else if ([str isEqualToString:@"⚄"]) {
+            totalScore += 5;
+        } else if ([str isEqualToString:@"⚅"]) {
+            totalScore += 6;
+        }
+    }
+    NSLog(@"%ld held dice - score: %ld", [self.heldDiceDictionary count], totalScore);
+
+}
+
 @end

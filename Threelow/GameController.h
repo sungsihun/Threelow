@@ -18,5 +18,6 @@
 - (NSString *)getDiceString;
 - (void)holdDie;
 - (void)resetDice;
+- (void)score;
 
 @end

@@ -40,6 +40,7 @@ int main(int argc, const char * argv[]) {
             
             if ([userInput isEqual:@"roll"]) {
                 NSLog(@"%@", [gameController getDiceString]);
+                [gameController score];
             } else if ([userInput isEqual:@"hold"]) {
                 [gameController holdDie];
             } else if ([userInput isEqual:@"reset"]) {
