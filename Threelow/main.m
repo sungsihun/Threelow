@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"%@", [gameController getDiceString]);
             } else if ([userInput isEqual:@"hold"]) {
                 [gameController holdDie];
-            }
+            } 
         }
         
     }

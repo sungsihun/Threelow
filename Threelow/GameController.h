@@ -16,6 +16,6 @@
 @property (nonatomic) NSMutableDictionary *heldDiceDictionary;
 
 - (NSString *)getDiceString;
-- (int)holdDie;
+- (void)holdDie;
 
 @end

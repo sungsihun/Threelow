@@ -28,14 +28,17 @@
     return diceString;
 }
 
-- (int)holdDie {
-    
-    NSLog(@"Enter the dice number you want to hold");
-    NSString *holdDiceNumber = [InputHandler getInput];
+- (void)holdDie {
 
-    [self.heldDiceDictionary setValue:self.diceArray[[holdDiceNumber intValue] - 1] forKey:holdDiceNumber];
+    NSLog(@"Enter the dice number");
+    NSString *holdDiceNumber = [InputHandler getInput];
     
-    return 0;
+    
+    if ([[self.heldDiceDictionary allKeys] containsObject:holdDiceNumber]) {
+        [self.heldDiceDictionary removeObjectForKey:holdDiceNumber];
+    } else {
+        [self.heldDiceDictionary setValue:self.diceArray[[holdDiceNumber intValue] - 1] forKey:holdDiceNumber];
+    }
 }
 
 @end
