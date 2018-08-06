@@ -10,10 +10,10 @@
 
 @implementation InputHandler
 
-- (NSString*)getInput {
++ (NSString*)getInput {
     char inputNum[255];
     
-    printf("input : ");
+    printf("> ");
     fgets(inputNum, 255, stdin);
     
     NSString *inputAns = [NSString stringWithCString:inputNum encoding:NSUTF8StringEncoding];
