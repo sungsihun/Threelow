@@ -17,5 +17,6 @@
 
 - (NSString *)getDiceString;
 - (void)holdDie;
+- (void)resetDice;
 
 @end

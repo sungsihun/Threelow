@@ -41,4 +41,8 @@
     }
 }
 
+- (void)resetDice {
+    [self.heldDiceDictionary removeAllObjects];
+}
+
 @end
